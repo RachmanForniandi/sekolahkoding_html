@@ -15,8 +15,20 @@
   
   <!-- membuat form-->
   <form>
-  	<input type="text" placeholder="Nama User" value="Nama Anda">
-    <textarea cols="100" rows="7">Pesan saya adalah...</textarea>
+  	<label for="nama_user">Nama</label>
+  	<input type="text" placeholder="Nama User" value="Nama Anda" id="nama_user">
+    <br>
+    <label for="pesan_user">Pesan</label>
+    <textarea cols="100" rows="7" id="pesan_user">Pesan saya adalah...</textarea>
+    <br>
+    <label>Hobi</label><br>
+    <input type="checkbox" name="hobi_user" value="0">Menggambar
+    <input type="checkbox" name="hobi_user" value="1" checked>Menulis
+    <input type="checkbox" name="hobi_user" value="2">Menyanyi<br>
+  
+    <label>Jenis Kelamin</label><br>
+    <input type="radio" name="gender" value="0">Laki-laki
+    <input type="radio" name="gender" value="1">Perempuan
   </form>
   
   <br><br>
