@@ -15,12 +15,17 @@
   
   <!-- membuat form-->
   <form>
-  	<label for="nama_user">Nama</label>
+  <fieldset>
+  <legend>Nama dan Pesan</legend>
+    <label for="nama_user">Nama</label>
   	<input type="text" placeholder="Nama User" value="Nama Anda" id="nama_user">
     <br>
     <label for="pesan_user">Pesan</label>
     <textarea cols="100" rows="7" id="pesan_user">Pesan saya adalah...</textarea>
     <br>
+   </fieldset>
+<fieldset>
+<legend>Pilihan Data</legend>
     <label>Hobi</label><br>
     <input type="checkbox" name="hobi_user" value="0">Menggambar
     <input type="checkbox" name="hobi_user" value="1" checked>Menulis
@@ -41,8 +46,14 @@
         <optgroup label="Backend">
         	<option value="php">PHP-MySQl</option>
             <option value="java">JAVA</option>
-        </optgroup>        
-    </select>
+        </optgroup>
+     </select>
+    </fieldset>        
+   
+    <br>
+    <input type="submit" value="Submit Data">
+
+
   </form>
   
   <br><br>
